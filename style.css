@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(245, 239, 230);
+    height: 100%;
+}
+.bg-con{
+   background-color: whitesmoke;
+    margin: 30px 30px;
+    border-radius: 15px; 
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.image img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.botom-card{
+    padding: 15px;
+}
+.perfume{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:hsl(228, 12%, 48%);
+}
+.heading{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.paragraph{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color:hsl(228, 12%, 48%);
+    
+}
+.price{
+    color:hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.price-next{
+    font-family: "Fraunces", serif;
+    font-weight: 300;
+    text-decoration:line-through;
+    color:hsl(228, 12%, 48%);
+}
+.cart-btn{
+    background-color: hsl(158, 36%, 37%);
+    border: 0;
+    color:#ffffff; 
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:5px;
+}
+.cart-btn:hover{
+    background-color: hsl(160, 75%, 16%);
+    cursor: pointer;
+}
+.dsk-img{
+    display: none;
+}
+@media screen and (min-width:320px) and (max-width:900px){
+    .dsk-img{
+        display: none;
+    }
+    .image{
+        display: block;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1440px) {
+    body{
+        width: 100%;
+    }
+    .bg-con{ 
+        margin: 50px 50px 50px 50px;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .image{
+        display: none;
+    }
+    .dsk-img{
+        display: block;
+    }
+    .dsk-img img{
+        height: 50vh;
+        min-height: 400px;
+        border-radius: 15px 0px 0px 15px;
+    }
+    .botom-card{
+        padding: 15px 20px 10px;
+    }
+}
